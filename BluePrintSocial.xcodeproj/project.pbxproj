@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB51A908B26B7AF94B13414F /* Pods_BluePrintSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAA1C80DA4D11A9C188089C /* Pods_BluePrintSocial.framework */; };
 		DC14F22020D6CA810025020D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F21F20D6CA810025020D /* AppDelegate.swift */; };
-		DC14F22220D6CA810025020D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F22120D6CA810025020D /* ViewController.swift */; };
+		DC14F22220D6CA810025020D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F22120D6CA810025020D /* SignInVC.swift */; };
 		DC14F22520D6CA810025020D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC14F22320D6CA810025020D /* Main.storyboard */; };
 		DC14F22720D6CA840025020D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC14F22620D6CA840025020D /* Assets.xcassets */; };
 		DC14F22A20D6CA840025020D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC14F22820D6CA840025020D /* LaunchScreen.storyboard */; };
+		DC14F23220D6CAE00025020D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC14F23120D6CAE00025020D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75DF6D5FE8A06E66DC94E7AC /* Pods-BluePrintSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BluePrintSocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-BluePrintSocial/Pods-BluePrintSocial.release.xcconfig"; sourceTree = "<group>"; };
+		AAAA1C80DA4D11A9C188089C /* Pods_BluePrintSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BluePrintSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE28D90C484B0E832C9102E /* Pods-BluePrintSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BluePrintSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BluePrintSocial/Pods-BluePrintSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		DC14F21C20D6CA810025020D /* BluePrintSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluePrintSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC14F21F20D6CA810025020D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC14F22120D6CA810025020D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC14F22120D6CA810025020D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		DC14F22420D6CA810025020D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC14F22620D6CA840025020D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC14F22920D6CA840025020D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC14F22B20D6CA840025020D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC14F23120D6CAE00025020D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB51A908B26B7AF94B13414F /* Pods_BluePrintSocial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4511B1591D067E27EA2B0FA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAE28D90C484B0E832C9102E /* Pods-BluePrintSocial.debug.xcconfig */,
+				75DF6D5FE8A06E66DC94E7AC /* Pods-BluePrintSocial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC14F21320D6CA810025020D = {
 			isa = PBXGroup;
 			children = (
 				DC14F21E20D6CA810025020D /* BluePrintSocial */,
 				DC14F21D20D6CA810025020D /* Products */,
+				4511B1591D067E27EA2B0FA7 /* Pods */,
+				E054D226CE7393583E054275 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +73,46 @@
 			isa = PBXGroup;
 			children = (
 				DC14F21F20D6CA810025020D /* AppDelegate.swift */,
-				DC14F22120D6CA810025020D /* ViewController.swift */,
+				DC14F23520D6D19D0025020D /* Controller */,
+				DC14F23420D6D1930025020D /* View */,
+				DC14F23320D6D18B0025020D /* Model */,
 				DC14F22320D6CA810025020D /* Main.storyboard */,
 				DC14F22620D6CA840025020D /* Assets.xcassets */,
 				DC14F22820D6CA840025020D /* LaunchScreen.storyboard */,
 				DC14F22B20D6CA840025020D /* Info.plist */,
+				DC14F23120D6CAE00025020D /* GoogleService-Info.plist */,
 			);
 			path = BluePrintSocial;
+			sourceTree = "<group>";
+		};
+		DC14F23320D6D18B0025020D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC14F23420D6D1930025020D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC14F23520D6D19D0025020D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F22120D6CA810025020D /* SignInVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E054D226CE7393583E054275 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAAA1C80DA4D11A9C188089C /* Pods_BluePrintSocial.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC14F22E20D6CA840025020D /* Build configuration list for PBXNativeTarget "BluePrintSocial" */;
 			buildPhases = (
+				7F51EBE751C1DFA98DC2745F /* [CP] Check Pods Manifest.lock */,
 				DC14F21820D6CA810025020D /* Sources */,
 				DC14F21920D6CA810025020D /* Frameworks */,
 				DC14F21A20D6CA810025020D /* Resources */,
+				326392CFE30EF72C849AEB41 /* [CP] Embed Pods Frameworks */,
+				C5E0432AB4DEC855E036E63A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC14F22A20D6CA840025020D /* LaunchScreen.storyboard in Resources */,
+				DC14F23220D6CAE00025020D /* GoogleService-Info.plist in Resources */,
 				DC14F22720D6CA840025020D /* Assets.xcassets in Resources */,
 				DC14F22520D6CA810025020D /* Main.storyboard in Resources */,
 			);
@@ -130,12 +185,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		326392CFE30EF72C849AEB41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BluePrintSocial/Pods-BluePrintSocial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BluePrintSocial/Pods-BluePrintSocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F51EBE751C1DFA98DC2745F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BluePrintSocial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5E0432AB4DEC855E036E63A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BluePrintSocial/Pods-BluePrintSocial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC14F21820D6CA810025020D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC14F22220D6CA810025020D /* ViewController.swift in Sources */,
+				DC14F22220D6CA810025020D /* SignInVC.swift in Sources */,
 				DC14F22020D6CA810025020D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +393,7 @@
 		};
 		DC14F22F20D6CA840025020D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE28D90C484B0E832C9102E /* Pods-BluePrintSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +412,7 @@
 		};
 		DC14F23020D6CA840025020D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75DF6D5FE8A06E66DC94E7AC /* Pods-BluePrintSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

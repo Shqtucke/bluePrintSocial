@@ -13,10 +13,18 @@ import Firebase
 
 
 class SignInVC: UIViewController {
+    
+    @IBOutlet var iknowPic: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        iknowPic.layer.shadowColor = UIColor(red: SHADOW_GREY, green: SHADOW_GREY, blue: SHADOW_GREY, alpha: 0.6).cgColor
+        iknowPic.layer.shadowOpacity = 0.8
+        iknowPic.layer.shadowRadius = 5.0
+        iknowPic.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        iknowPic.layer.cornerRadius = 4.0
     }
 
     override func didReceiveMemoryWarning() {

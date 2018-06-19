@@ -19,6 +19,7 @@
 		DC1594D620D71E74004A76D6 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1594D520D71E74004A76D6 /* RoundButton.swift */; };
 		DC1594D820D72152004A76D6 /* FancyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1594D720D72152004A76D6 /* FancyText.swift */; };
 		DC1594DA20D723E7004A76D6 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1594D920D723E7004A76D6 /* FancyButton.swift */; };
+		DC185CDF20D881B600596E1A /* iKnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC185CDE20D881B600596E1A /* iKnowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		DC1594D720D72152004A76D6 /* FancyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyText.swift; sourceTree = "<group>"; };
 		DC1594D920D723E7004A76D6 /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		DC185CDD20D87C8F00596E1A /* BluePrintSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BluePrintSocial.entitlements; sourceTree = "<group>"; };
+		DC185CDE20D881B600596E1A /* iKnowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKnowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				DC1594D520D71E74004A76D6 /* RoundButton.swift */,
 				DC1594D920D723E7004A76D6 /* FancyButton.swift */,
 				DC1594D720D72152004A76D6 /* FancyText.swift */,
+				DC185CDE20D881B600596E1A /* iKnowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				DC14F22020D6CA810025020D /* AppDelegate.swift in Sources */,
 				DC1594DA20D723E7004A76D6 /* FancyButton.swift in Sources */,
 				DC1594D120D71874004A76D6 /* FancyView.swift in Sources */,
+				DC185CDF20D881B600596E1A /* iKnowView.swift in Sources */,
 				DC1594D820D72152004A76D6 /* FancyText.swift in Sources */,
 				DC1594D420D71913004A76D6 /* Constants.swift in Sources */,
 			);

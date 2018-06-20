@@ -12,11 +12,13 @@ import FBSDKLoginKit
 import Firebase
 
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var iknowPic: UIImageView!
     
-
+    @IBOutlet var emailField: FancyText!
+    @IBOutlet var pwdField: FancyText!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +27,11 @@ class SignInVC: UIViewController {
         iknowPic.layer.shadowRadius = 5.0
         iknowPic.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         iknowPic.layer.cornerRadius = 4.0
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pwdField.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,14 +59,37 @@ class SignInVC: UIViewController {
     func firebaseAuth(_ credential: AuthCredential) {
         Auth.auth().signIn(with: credential) { (user, error) in
             if error != nil {
-                print("TUCK: Unable to authenticate with Firebase - \(error)")
+                print("TUCK: Unable to authenticate with Firebase - \(String(describing: error))")
+                
             } else {
                 print("TUCK: Successfully authenticated with Firebase")
             }
         }
     }
     
+    @IBAction func signInTapped(_ sender: Any) {
+        if let email = emailField.text, let pwd = pwdField.text {
+            Auth.auth().signIn(withEmail: email, password: pwd) { (user, error) in
+                if error == nil {
+                    print("TUCK: Email user authenticated with Firebase")
+                } else {
+                    Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print("TUCK: Unable to authenticate with Firebase using email")
+                        } else {
+                            print("TUCK: Successfully authenticated")
+                        }
+                    })
+                  
+                    
+                }
+                }
+            }
+        }
+
 }
+
+
 
 
 

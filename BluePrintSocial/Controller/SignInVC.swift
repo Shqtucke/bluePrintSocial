@@ -27,9 +27,16 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         iknowPic.layer.shadowRadius = 5.0
         iknowPic.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         iknowPic.layer.cornerRadius = 4.0
+        
+        self.pwdField.delegate = self
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailField.resignFirstResponder()
         pwdField.resignFirstResponder()
         return true
     }

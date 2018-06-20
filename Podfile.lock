@@ -58,6 +58,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
   - FBSDKLoginKit
@@ -65,6 +66,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -81,7 +83,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   leveldb-library: 4f9eedf84ab46b4fa3b7893bf30714b2a1a74022
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: 0c8ba3288b4b4be033de3d3c35afc3069b791ebb
+PODFILE CHECKSUM: 6d951aeb34784a2a1d3f9207f954f93d3b2e6992
 
 COCOAPODS: 1.4.0

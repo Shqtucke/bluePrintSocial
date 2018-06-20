@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -105,10 +105,6 @@
                                     <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eog-Tc-22f"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MB1-Ce-PLB">
-                                <rect key="frame" x="164" y="434" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.18823529411764706" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -146,11 +142,45 @@
                         <outlet property="emailField" destination="mbX-Tf-Ftg" id="tGF-8r-22k"/>
                         <outlet property="iknowPic" destination="Y7F-50-Cno" id="flM-U9-m0t"/>
                         <outlet property="pwdField" destination="Vvu-d6-FVi" id="X9I-pE-als"/>
+                        <segue destination="urb-nJ-oxl" kind="show" identifier="gotoFeed" id="k8B-2V-umY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="Tzx-nN-sjs">
+            <objects>
+                <viewController id="urb-nJ-oxl" customClass="FeedVC" customModule="BluePrintSocial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DUF-Pl-TXN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkS-pq-4R2">
+                                <rect key="frame" x="156" y="318.5" width="63" height="30"/>
+                                <state key="normal" title="Sign-Out">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="urb-nJ-oxl" eventType="touchUpInside" id="JUb-yS-IB3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38039215686274508" green="0.3411764705882353" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DkS-pq-4R2" firstAttribute="centerY" secondItem="DUF-Pl-TXN" secondAttribute="centerY" id="gfj-Ra-zMZ"/>
+                            <constraint firstItem="DkS-pq-4R2" firstAttribute="centerX" secondItem="DUF-Pl-TXN" secondAttribute="centerX" id="oHl-um-yHY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VDl-Gi-tSA"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="039-RN-qq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puW-Fl-Ifz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

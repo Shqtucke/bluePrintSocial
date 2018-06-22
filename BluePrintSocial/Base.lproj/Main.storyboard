@@ -213,18 +213,18 @@
                                                     <rect key="frame" x="0.0" y="-12" width="343" height="402"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-WF-927" customClass="CircleView" customModule="BluePrintSocial" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tuck" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-WF-927" customClass="CircleView" customModule="BluePrintSocial" customModuleProvider="target">
                                                             <rect key="frame" x="5" y="5" width="60" height="60"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEs-Md-Ice">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shawn Tucker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEs-Md-Ice">
                                                             <rect key="frame" x="73" y="15" width="207" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder-1" translatesAutoresizingMaskIntoConstraints="NO" id="yxO-7j-7yb">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_0375" translatesAutoresizingMaskIntoConstraints="NO" id="yxO-7j-7yb">
                                                             <rect key="frame" x="0.0" y="73" width="343" height="135"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -232,7 +232,7 @@
                                                             <rect key="frame" x="5" y="216" width="343" height="107"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <string key="text">This place was the bomb pizza spot. I recommend you try this whenever you visit las vegas. It's located inside the Ventian Hotel and Casino</string>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
@@ -243,7 +243,7 @@
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="88888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvP-2B-KFA">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="97863" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvP-2B-KFA">
                                                             <rect key="frame" x="266" y="338" width="50" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
@@ -251,7 +251,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="LGS-O2-4Fv" customClass="CircleView" customModule="BluePrintSocial" customModuleProvider="target">
-                                                            <rect key="frame" x="283" y="5" width="60" height="60"/>
+                                                            <rect key="frame" x="283" y="5" width="50" height="50"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
@@ -272,7 +272,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-oj-GCO" customClass="FancyView" customModule="BluePrintSocial" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <rect key="frame" x="8" y="0.0" width="375" height="65"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="dWf-Nc-8o7">
                                         <rect key="frame" x="18" y="32" width="38" height="25"/>
@@ -314,18 +314,18 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nqM-Ng-aTf" firstAttribute="bottom" secondItem="VDl-Gi-tSA" secondAttribute="bottom" id="2ll-p3-xzW"/>
                             <constraint firstItem="nqM-Ng-aTf" firstAttribute="leading" secondItem="VDl-Gi-tSA" secondAttribute="leading" constant="16" id="EhA-4m-qAL"/>
-                            <constraint firstItem="M1S-oj-GCO" firstAttribute="leading" secondItem="VDl-Gi-tSA" secondAttribute="leading" id="Tal-mb-SHP"/>
+                            <constraint firstItem="M1S-oj-GCO" firstAttribute="leading" secondItem="VDl-Gi-tSA" secondAttribute="leading" constant="8" id="Tal-mb-SHP"/>
                             <constraint firstItem="VDl-Gi-tSA" firstAttribute="trailing" secondItem="M4s-PG-R3T" secondAttribute="trailing" constant="16" id="Z9o-7S-zac"/>
                             <constraint firstItem="M1S-oj-GCO" firstAttribute="top" secondItem="DUF-Pl-TXN" secondAttribute="top" id="als-az-xs1"/>
                             <constraint firstItem="VDl-Gi-tSA" firstAttribute="trailing" secondItem="nqM-Ng-aTf" secondAttribute="trailing" constant="16" id="dy9-Cc-rPK"/>
                             <constraint firstItem="nqM-Ng-aTf" firstAttribute="top" secondItem="M4s-PG-R3T" secondAttribute="bottom" constant="16" id="eLb-G3-Oba"/>
                             <constraint firstItem="M4s-PG-R3T" firstAttribute="top" secondItem="M1S-oj-GCO" secondAttribute="bottom" constant="18" id="o36-Vb-NQy"/>
                             <constraint firstItem="M4s-PG-R3T" firstAttribute="leading" secondItem="VDl-Gi-tSA" secondAttribute="leading" constant="16" id="vnF-SW-x4x"/>
-                            <constraint firstItem="M1S-oj-GCO" firstAttribute="trailing" secondItem="VDl-Gi-tSA" secondAttribute="trailing" id="zam-1A-32Q"/>
+                            <constraint firstItem="M1S-oj-GCO" firstAttribute="trailing" secondItem="VDl-Gi-tSA" secondAttribute="trailing" constant="8" id="zam-1A-32Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VDl-Gi-tSA"/>
                     </view>
@@ -340,13 +340,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_0375" width="4032" height="3024"/>
         <image name="Icon-Small-50" width="50" height="50"/>
+        <image name="Tuck" width="960" height="1280"/>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
-        <image name="placeholder-1" width="567" height="312"/>
-        <image name="profile" width="113" height="155"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>

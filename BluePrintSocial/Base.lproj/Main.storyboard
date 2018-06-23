@@ -163,13 +163,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gvD-b7-fxV">
                                         <rect key="frame" x="8" y="8" width="327" height="50"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="eKD-fR-Ko0" customClass="CircleView" customModule="BluePrintSocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="eKD-fR-Ko0" customClass="CircleView" customModule="BluePrintSocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="3FS-Ay-7dq"/>
                                                     <constraint firstAttribute="height" constant="50" id="naD-Qb-mJg"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="CsZ-ac-Fab" appends="YES" id="eLh-zL-gEv"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQe-pv-sd4" customClass="FancyText" customModule="BluePrintSocial" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="0.0" width="207" height="50"/>
@@ -334,6 +338,7 @@
                         <viewLayoutGuide key="safeArea" id="VDl-Gi-tSA"/>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="eKD-fR-Ko0" id="xln-Jv-wJz"/>
                         <outlet property="tableView" destination="nqM-Ng-aTf" id="I5h-2S-JdH"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="039-RN-qq3"/>
                     </connections>
@@ -342,6 +347,11 @@
                 <tapGestureRecognizer id="YQA-oO-yhB">
                     <connections>
                         <action selector="signOutTapped:" destination="urb-nJ-oxl" id="Hgf-3x-O8h"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CsZ-ac-Fab">
+                    <connections>
+                        <action selector="addImageTapped:" destination="urb-nJ-oxl" id="8vb-Bv-a6r"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

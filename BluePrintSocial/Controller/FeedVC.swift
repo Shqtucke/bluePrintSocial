@@ -11,17 +11,23 @@ import Firebase
 import SwiftKeychainWrapper
 
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var imageAdd: CircleView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true 
+        imagePicker.delegate = self 
 
         tableView.estimatedRowHeight = 402
         tableView.reloadData()
@@ -43,6 +49,19 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.tableView.reloadData() 
         }
         
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageAdd.image = image
+        } else {
+            print("TUCKE: No valid image selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func addImageTapped(_ sender: Any) {
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func signOutTapped(_ sender: Any) {
@@ -73,7 +92,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         }
+    
 
-
+    
 }
 

@@ -17,11 +17,18 @@ class PostCell: UITableViewCell {
     @IBOutlet var likesLabel: UILabel!
     @IBOutlet var likeHeart: CircleView!
     
+    var post: Post!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-
+    func configureCell(post: Post) {
+        self.post = post
+        self.caption.text = post.caption
+        self.likesLabel.text = "\(post.likes)"
+        
+    }
 
 }

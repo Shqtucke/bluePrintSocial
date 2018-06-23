@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNb-c1-tjB" customClass="FancyView" customModule="BluePrintSocial" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNb-c1-tjB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon-Small-50" translatesAutoresizingMaskIntoConstraints="NO" id="Y7F-50-Cno">
@@ -274,12 +274,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-oj-GCO" customClass="FancyView" customModule="BluePrintSocial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="383" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="dWf-Nc-8o7">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="dWf-Nc-8o7">
                                         <rect key="frame" x="18" y="32" width="38" height="25"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="3rN-by-5BZ"/>
                                             <constraint firstAttribute="width" constant="38" id="Xi2-A9-jCi"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="YQA-oO-yhB" appends="YES" id="7mL-Jz-RQ0"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FuTucke Inc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB5-cL-4gc">
                                         <rect key="frame" x="96" y="28" width="193" height="29"/>
@@ -335,6 +339,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="puW-Fl-Ifz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YQA-oO-yhB">
+                    <connections>
+                        <action selector="signOutTapped:" destination="urb-nJ-oxl" id="Hgf-3x-O8h"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1096.8" y="111.99400299850076"/>
         </scene>

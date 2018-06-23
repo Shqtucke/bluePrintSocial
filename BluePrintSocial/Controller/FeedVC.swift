@@ -25,6 +25,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.estimatedRowHeight = 402
         tableView.reloadData()
         
+        DataService.ds.REF_POSTS.observe(.value) { (snapshot) in
+            print(snapshot.value)
+        }
+        
     }
     
     @IBAction func signOutTapped(_ sender: Any) {
@@ -33,6 +37,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         try! Auth.auth().signOut()
         performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
+    
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

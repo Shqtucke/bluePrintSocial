@@ -81,7 +81,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
             } else {
                 print("TUCK: Successfully authenticated with Firebase")
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
         }
@@ -93,7 +94,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                 if error == nil {
                     print("TUCK: Email user authenticated with Firebase")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                     
                 } else {
@@ -103,7 +105,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                         } else {
                             print("TUCK: Successfully authenticated")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                             
                         }
@@ -115,7 +118,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
             }
         }
     
-    func completeSignIn(id: String) {
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUsers(uid: id, userData: userData)
        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("TUCK: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "gotoFeed", sender: nil)

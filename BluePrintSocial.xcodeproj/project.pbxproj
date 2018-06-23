@@ -20,6 +20,7 @@
 		DC1594D820D72152004A76D6 /* FancyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1594D720D72152004A76D6 /* FancyText.swift */; };
 		DC1594DA20D723E7004A76D6 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1594D920D723E7004A76D6 /* FancyButton.swift */; };
 		DC185CDF20D881B600596E1A /* iKnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC185CDE20D881B600596E1A /* iKnowView.swift */; };
+		DC45223B20DDC5CA008F7593 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45223A20DDC5CA008F7593 /* DataService.swift */; };
 		DC52537F20DB11EB00E26F1C /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52537E20DB11EB00E26F1C /* FeedVC.swift */; };
 		DC803C0020DC61F9005C3912 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC803BFF20DC61F9005C3912 /* CircleView.swift */; };
 		DC803C0220DC65E1005C3912 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC803C0120DC65E1005C3912 /* CircleButton.swift */; };
@@ -45,6 +46,7 @@
 		DC1594D920D723E7004A76D6 /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		DC185CDD20D87C8F00596E1A /* BluePrintSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BluePrintSocial.entitlements; sourceTree = "<group>"; };
 		DC185CDE20D881B600596E1A /* iKnowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKnowView.swift; sourceTree = "<group>"; };
+		DC45223A20DDC5CA008F7593 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DC52537E20DB11EB00E26F1C /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		DC803BFF20DC61F9005C3912 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		DC803C0120DC65E1005C3912 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		DC14F21E20D6CA810025020D /* BluePrintSocial */ = {
 			isa = PBXGroup;
 			children = (
+				DC45223920DDC59F008F7593 /* Services */,
 				DC185CDD20D87C8F00596E1A /* BluePrintSocial.entitlements */,
 				DC1594D220D71900004A76D6 /* Utilities */,
 				DC14F21F20D6CA810025020D /* AppDelegate.swift */,
@@ -145,6 +148,14 @@
 				DC1594D320D71913004A76D6 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DC45223920DDC59F008F7593 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC45223A20DDC5CA008F7593 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E054D226CE7393583E054275 /* Frameworks */ = {
@@ -304,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC52537F20DB11EB00E26F1C /* FeedVC.swift in Sources */,
+				DC45223B20DDC5CA008F7593 /* DataService.swift in Sources */,
 				DC14F22220D6CA810025020D /* SignInVC.swift in Sources */,
 				DC1594D620D71E74004A76D6 /* RoundButton.swift in Sources */,
 				DC14F22020D6CA810025020D /* AppDelegate.swift in Sources */,

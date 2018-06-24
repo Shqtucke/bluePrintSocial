@@ -25,6 +25,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         DataService.ds.REF_POSTS.observe(.value) { (snapshot) in
         
             self.posts = []

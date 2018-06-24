@@ -58,6 +58,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - RAMAnimatedTabBarController (3.2.0)
   - SwiftKeychainWrapper (3.0.1)
 
 DEPENDENCIES:
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - RAMAnimatedTabBarController
   - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
@@ -81,10 +83,11 @@ SPEC CHECKSUMS:
   FirebaseStorage: 0cca42d9b889a0227c3a50121f45a4469fc9eb27
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
-  leveldb-library: 4f9eedf84ab46b4fa3b7893bf30714b2a1a74022
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  RAMAnimatedTabBarController: 0499157f67053a21bcccb52a25dd3c6ecdbfb4f6
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: 6d951aeb34784a2a1d3f9207f954f93d3b2e6992
+PODFILE CHECKSUM: 7aee57d8cabb8e47a78927924fbc2c8ec8be625a
 
 COCOAPODS: 1.4.0

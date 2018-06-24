@@ -12,5 +12,6 @@ target 'BluePrintSocial' do
     pod 'Firebase/Database'
     pod 'FBSDKLoginKit'
     pod 'SwiftKeychainWrapper'
+    pod 'RAMAnimatedTabBarController'
     
 end

@@ -340,7 +340,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VDl-Gi-tSA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="MiA-YN-lRp"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="MiA-YN-lRp" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                     <connections>
                         <outlet property="captionField" destination="VQe-pv-sd4" id="a1y-LN-DmE"/>
                         <outlet property="imageAdd" destination="eKD-fR-Ko0" id="xln-Jv-wJz"/>
@@ -372,7 +372,7 @@
                         <color key="backgroundColor" red="0.3843137254901961" green="0.3411764705882353" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pEy-38-W8y"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="nfv-iK-jWA"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="nfv-iK-jWA" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ter-l7-ijN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,7 +388,7 @@
                         <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ZKg-D5-g5X"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="bUJ-pS-zeI"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="bUJ-pS-zeI" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sit-Fz-k7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -404,7 +404,7 @@
                         <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="yPm-Xc-TOI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="DaH-Cl-PAg"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="DaH-Cl-PAg" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpf-10-00u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,7 +420,7 @@
                         <color key="backgroundColor" red="0.0" green="0.87058823529999996" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="H8G-9r-t4i"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="m3y-sS-yKM"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="m3y-sS-yKM" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47A-Lw-jb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -429,9 +429,10 @@
         <!--3rd-->
         <scene sceneID="uZk-hx-inP">
             <objects>
-                <tabBarController title="3rd" automaticallyAdjustsScrollViewInsets="NO" id="TU3-0p-2xC" sceneMemberID="viewController">
+                <tabBarController title="3rd" automaticallyAdjustsScrollViewInsets="NO" id="TU3-0p-2xC" customClass="RAMAnimatedTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TBy-6k-ZyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.3843137254901961" green="0.3411764705882353" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>

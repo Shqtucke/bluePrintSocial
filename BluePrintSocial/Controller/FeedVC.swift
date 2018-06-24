@@ -11,7 +11,7 @@ import Firebase
 import SwiftKeychainWrapper
 
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var imageAdd: CircleView!
@@ -25,7 +25,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        captionField.delegate = self
         DataService.ds.REF_POSTS.observe(.value) { (snapshot) in
         
             self.posts = []
@@ -61,6 +61,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
 
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        captionField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     

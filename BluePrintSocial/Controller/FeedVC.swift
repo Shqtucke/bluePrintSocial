@@ -26,7 +26,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         super.viewDidLoad()
         
         DataService.ds.REF_POSTS.observe(.value) { (snapshot) in
-            //print(snapshot.value)
+        
             self.posts = []
             
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
@@ -35,7 +35,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let post = Post(postKey: key, postData: postDict)
-                        self.posts.append(post)
+                        //self.posts.append(post)
+                        self.posts.insert(post, at: 0)
                     }
                 }
             }
@@ -52,8 +53,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         imagePicker.allowsEditing = true 
         imagePicker.delegate = self 
 
-        tableView.estimatedRowHeight = 402
-        tableView.reloadData()
+        //tableView.estimatedRowHeight = 402
+       tableView.reloadData()
         
 }
     override func viewWillAppear(_ animated: Bool) {
@@ -148,24 +149,25 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-
-        //Above
         let post = posts[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
-            
-           if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//            }
+            if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
                 cell.configureCell(post: post, img: img)
+                
             }else {
                 cell.configureCell(post: post, img: nil)
                 return cell
             }
-            } else {
+        } else {
             return PostCell()
         }
         return PostCell()
-        }
+    }
     
-
+    
     
 }
 

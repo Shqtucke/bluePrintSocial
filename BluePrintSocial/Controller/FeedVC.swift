@@ -25,16 +25,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        imagePicker = UIImagePickerController()
-        imagePicker.allowsEditing = true 
-        imagePicker.delegate = self 
-
-        tableView.estimatedRowHeight = 402
-        tableView.reloadData()
-        
         DataService.ds.REF_POSTS.observe(.value) { (snapshot) in
             //print(snapshot.value)
             self.posts = []
@@ -49,10 +39,30 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     }
                 }
             }
-            self.tableView.reloadData() 
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
         }
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true 
+        imagePicker.delegate = self 
+
+        tableView.estimatedRowHeight = 402
+        tableView.reloadData()
+        
+}
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
     }
+    
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
@@ -91,10 +101,31 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 } else {
                     print("TUCK: Successfull upload to firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL {
+                        self.postToFirebase(imgUrl: url)
+                    }
+                    
                     
                 }
             }
         }
+    }
+    
+    func postToFirebase(imgUrl:String) {
+        let post: Dictionary<String, AnyObject> = [
+            "caption": captionField!.text! as AnyObject,
+            "imageUrl": imgUrl as AnyObject,
+            "likes" : 0 as AnyObject
+        ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
     }
     
     
@@ -117,6 +148,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+
+        //Above
         let post = posts[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
             
@@ -136,3 +169,4 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
 }
 
+// (this is a test)

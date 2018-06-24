@@ -43,6 +43,7 @@ class PostCell: UITableViewCell {
                         if let img = UIImage(data: imgData) {
                             self.postImage.image = img
                             FeedVC.imageCache.setObject(img, forKey: post.imageUrl as NSString)
+                            
                         }
                     }
                 }

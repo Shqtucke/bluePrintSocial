@@ -159,20 +159,18 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         let post = posts[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
-            if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
-                cell.configureCell(post: post, img: img)
-                
-            }else {
+
+//            if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
+//                cell.configureCell(post: post, img: img)
+//
+//            }else {
                 cell.configureCell(post: post, img: nil)
                 return cell
-            }
+//            }
         } else {
             return PostCell()
         }
-        return PostCell()
+        //return PostCell()
     }
     
     

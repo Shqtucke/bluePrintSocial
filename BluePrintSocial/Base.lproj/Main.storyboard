@@ -362,6 +362,22 @@
             </objects>
             <point key="canvasLocation" x="1742" y="122"/>
         </scene>
+        <!--locate-->
+        <scene sceneID="Q8Y-Tk-y9d">
+            <objects>
+                <viewController id="XDs-2D-hjv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sov-KO-07o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AI1-rh-VSp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="locate" image="7street" id="be4-jp-cp8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfF-VZ-YkS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2444" y="124"/>
+        </scene>
         <!--3rd-->
         <scene sceneID="uZk-hx-inP">
             <objects>
@@ -374,6 +390,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="urb-nJ-oxl" kind="relationship" relationship="viewControllers" id="eXI-pT-QJq"/>
+                        <segue destination="XDs-2D-hjv" kind="relationship" relationship="viewControllers" id="Ejb-FV-thg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbw-Cz-Yu4" userLabel="First Responder" sceneMemberID="firstResponder"/>

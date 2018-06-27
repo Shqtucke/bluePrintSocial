@@ -89,6 +89,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     @IBAction func postBtnTapped(_ sender: Any) {
         guard let caption = captionField.text, caption != "" else {
+            
             print("TUCK: Caption must be entered")
             return
         }

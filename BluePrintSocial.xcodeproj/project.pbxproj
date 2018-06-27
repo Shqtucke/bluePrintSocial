@@ -20,6 +20,7 @@
 		DC1594D820D72152004A76D6 /* FancyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1594D720D72152004A76D6 /* FancyText.swift */; };
 		DC1594DA20D723E7004A76D6 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1594D920D723E7004A76D6 /* FancyButton.swift */; };
 		DC185CDF20D881B600596E1A /* iKnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC185CDE20D881B600596E1A /* iKnowView.swift */; };
+		DC36C6DE20E31A1C006A68A6 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36C6DD20E31A1C006A68A6 /* RoundTextField.swift */; };
 		DC45223B20DDC5CA008F7593 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45223A20DDC5CA008F7593 /* DataService.swift */; };
 		DC45223D20DE6BA8008F7593 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45223C20DE6BA8008F7593 /* Post.swift */; };
 		DC52537F20DB11EB00E26F1C /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52537E20DB11EB00E26F1C /* FeedVC.swift */; };
@@ -47,6 +48,7 @@
 		DC1594D920D723E7004A76D6 /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		DC185CDD20D87C8F00596E1A /* BluePrintSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BluePrintSocial.entitlements; sourceTree = "<group>"; };
 		DC185CDE20D881B600596E1A /* iKnowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iKnowView.swift; sourceTree = "<group>"; };
+		DC36C6DD20E31A1C006A68A6 /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		DC45223A20DDC5CA008F7593 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DC45223C20DE6BA8008F7593 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DC52537E20DB11EB00E26F1C /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				DC803BFF20DC61F9005C3912 /* CircleView.swift */,
 				DC803C0120DC65E1005C3912 /* CircleButton.swift */,
 				DC803C0320DC6C0F005C3912 /* PostCell.swift */,
+				DC36C6DD20E31A1C006A68A6 /* RoundTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				DC14F22020D6CA810025020D /* AppDelegate.swift in Sources */,
 				DC45223D20DE6BA8008F7593 /* Post.swift in Sources */,
 				DC1594DA20D723E7004A76D6 /* FancyButton.swift in Sources */,
+				DC36C6DE20E31A1C006A68A6 /* RoundTextField.swift in Sources */,
 				DC1594D120D71874004A76D6 /* FancyView.swift in Sources */,
 				DC803C0220DC65E1005C3912 /* CircleButton.swift in Sources */,
 				DC803C0020DC61F9005C3912 /* CircleView.swift in Sources */,
@@ -481,7 +485,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79M729PMA7;
 				INFOPLIST_FILE = BluePrintSocial/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Futucke.BluePrintSocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -498,7 +505,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79M729PMA7;
 				INFOPLIST_FILE = BluePrintSocial/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Futucke.BluePrintSocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
